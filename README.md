@@ -1,1 +1,2 @@
-Hey. This is MLM site for Droxford foods. I have to finish up making the commissions.
+Hey. This is MLM site for Droxford foods. This is the agency part of the MLM. The E-commerce part is currently with my fellow developer.
+
