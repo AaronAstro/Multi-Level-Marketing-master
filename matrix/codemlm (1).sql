@@ -117,7 +117,8 @@ CREATE TABLE `tree` (
   `seventh` varchar(50) NOT NULL,
   `eighth` varchar(50) NOT NULL,
   `ninth` varchar(50) NOT NULL,
-  `tenth` varchar(50) NOT NULL
+  `tenth` varchar(50) NOT NULL,
+  `Level` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

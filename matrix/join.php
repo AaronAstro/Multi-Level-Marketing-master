@@ -118,14 +118,14 @@ if(isset($_GET['join_user'])){
 			}
 			elseif($count == 1){
 				// $admin_amount = $admin_amount-((1/10)*($temp_amount));
-				$current_user_income=(1/10)*($temp_amount)+$current_bal;
+				$current_user_income=(1/25)*($temp_amount)+$current_bal;
 				// $query = mysqli_query($con,"update user set amount='$current_user_income' where email= '$temp_under_userid' ");
 				$query = mysqli_query($con,"update income set current_bal='$current_user_income' where userid= '$temp_under_userid' ");
 				$count += 1;
 			}
 			else{
 				// $admin_amount = $admin_amount-((1/20)*($temp_amount));
-				$current_user_income=(1/20)*($temp_amount)+$current_bal;
+				$current_user_income=(1/25)*($temp_amount)+$current_bal;
 				// $query = mysqli_query($con,"update user set amount='$current_user_income' where email= '$temp_under_userid' ");
 				$query = mysqli_query($con,"update income set current_bal='$current_user_income' where userid= '$temp_under_userid' ");
 			}
