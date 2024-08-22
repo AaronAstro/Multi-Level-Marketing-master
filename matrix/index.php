@@ -96,9 +96,7 @@
           <!-- <div class="col-lg-6 col-12"> -->
             <div class="p-5">
               <!-- <div class="text-center"> -->
-                <ul><h1 class="h4 text-gray-900 mb-4" style="margin-top: 10px; font-size:35px"><b style="color: #fff ">CONTACT DETAILS</b></h1>
-                <li style="color: #fff; font-size: 20px ">Phone Number: +917015737012 ; +918168858453</li>
-                <li  style="color: #fff; font-size: 20px ">Email: cleanalya.ltd@gmail.com</li>
+                <ul><h1 class="h4 text-gray-900 mb-4" style="margin-top: 10px; font-size:35px"><b style="color: #fff ">Copyright by Droxford 2024</b></h1>
                 </ul>
 </div>
              
