@@ -15,7 +15,7 @@ $userid = $_SESSION['userid'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mlml Website  - Payment Received History</title>
+    <title>MLM Website - Payment Received History</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,8 +28,6 @@ $userid = $_SESSION['userid'];
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
- 
 
 </head>
 
@@ -51,39 +49,45 @@ $userid = $_SESSION['userid'];
                 </div>
                 <!-- /.row -->
                 <div class="row">
-                	<div class="col-lg-6">
-                    	<br><br>
-                    	<table class="table table-bordered table-striped" style="font-size:20px">
-                        	<tr>
-                            	<th>S.No.</th>
-                                <th>Amount</th>
-                                <th>Date</th>
-                            </tr>
-                            <?php 
-							$i=1;
-							$query = mysqli_query($con,"select * from income_received where userid='$userid' order by id desc");
-							if(mysqli_num_rows($query)>0){
-								while($row=mysqli_fetch_array($query)){
-									$amount = $row['amount'];
-									$date = $row['date'];
-								?>
-                                	<tr>
-                                    	<td><?php echo $i; ?></td>
-                                        <td><?php echo $amount; ?></td>
-                                        <td><?php echo $date; ?></td>
-                                    </tr>
-                                <?php
-									$i++;
-								}
-							}
-							else{
-							?>
-                            	<tr>
-                                	<td colspan="4">You didn't received any payment yet.</td>
+                    <div class="col-lg-6">
+                        <br><br>
+                        <table class="table table-bordered table-striped" style="font-size:20px">
+                            <thead>
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
                                 </tr>
-                            <?php
-							}
-							?>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                $i = 1;
+                                // Query to fetch payment history for the logged-in user
+                                $query = mysqli_query($con, "SELECT * FROM income_received WHERE userid='$userid' ORDER BY id DESC");
+                                
+                                // Check if there are any records in the income_received table
+                                if (mysqli_num_rows($query) > 0) {
+                                    while ($row = mysqli_fetch_array($query)) {
+                                        $amount = $row['amount']; // Retrieved amount
+                                        $date = $row['date'];     // Retrieved date
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $i; ?></td>
+                                            <td><?php echo $amount; ?></td>
+                                            <td><?php echo $date; ?></td>
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                    }
+                                } else {
+                                    ?>
+                                    <tr>
+                                        <td colspan="3">You haven't received any payments yet.</td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+                            </tbody>
                         </table>
                     </div>
                 </div>
