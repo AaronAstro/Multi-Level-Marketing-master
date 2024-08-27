@@ -1,0 +1,158 @@
+.conatct-tabs {
+    margin-top: 100px;
+}
+
+/* Cotact tablets */
+.conatct-tabs>.wrapper {
+    /* margin-top: 50px;s */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 50px;
+    /* Items wrap to the next line on smaller screens */
+}
+
+
+.contact-tab {
+    color: white;
+    background-color: #164577;
+    flex: 1 1 300px;
+    /* Each item takes one-third of the container width initially */
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    border: 2px solid #ccc;
+    border-radius: 50px 0 25px 0;
+}
+
+.contact-tab img {
+    width: 50px;
+    /* Adjust size of icon image */
+    height: auto;
+}
+
+.contact-tab h3 {
+    margin-top: 10px;
+}
+
+.contact-tab p,
+.contact-tab a {
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: white;
+}
+
+.contact-tab:hover {
+    border: 2px dotted #999;
+    /* Dotted border on hover */
+    background-size: 85%;
+    /* Shrinking background/image on hover */
+}
+
+.contact-tab:hover img {
+    transform: scale(0.9);
+    /* Shrinking image/icon on hover */
+}
+
+@media (max-width: 600px) {
+    .contact-tab {
+        flex-basis: 100%;
+        /* Each item takes full width on smaller screens */
+    }
+
+
+}
+
+/* contact form */
+/* General styling for the contact form */
+.contact-form {
+    padding: 20px 0;
+}
+
+.contact-form>.wrapper {
+    text-align: center;
+}
+
+.contact-form .form-contact {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.contact-form h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribute form items */
+}
+
+.contact-form form h2 {
+    width: 100%;
+    /* Distribute form items */
+}
+
+.contact-form .input-group {
+    flex: 0 0 calc(50% - 10px);
+    /* Two columns, subtracting margin */
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    margin: 20px auto 0;
+    background-color: #ffa02b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1216ff;
+}
+
+@media (max-width: 600px) {
+    .contact-form .input-group {
+        flex: 0 0 100%;
+        /* Full width on smaller screens */
+    }
+}

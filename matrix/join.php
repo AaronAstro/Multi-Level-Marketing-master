@@ -17,7 +17,7 @@ if(isset($_GET['join_user'])){
 	$name=  mysqli_real_escape_string($con,$_GET['name']);
 	$side = mysqli_real_escape_string($con,$_GET['side']);
 	$amount = mysqli_real_escape_string($con,$_GET['amount']);
-	$password = "12345678";
+	$password = '12345678';
 	  
 	$flag = 0;
 	

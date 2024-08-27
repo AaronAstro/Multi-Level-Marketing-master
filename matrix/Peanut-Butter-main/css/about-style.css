@@ -1,0 +1,141 @@
+/* About Section */
+
+.about-section {
+    margin-top: -50px;
+    padding-top: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.09), rgba(115, 115, 115, 0.33)) !important;
+}
+
+.about-section>.wrapper>h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-items {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 46%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-bottom: 25px;
+}
+
+.about-item {
+    padding: 20px;
+}
+
+.about-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item p,
+.description>p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.first {
+    text-align: right;
+}
+
+.items-3,
+.item-2 {
+    width: 75%;
+}
+
+.item-2 {
+    margin: 0 0 0 20%;
+}
+
+@media (max-width: 800px) {
+    .about-items {
+        grid-template-columns: 1fr;
+        background-image: none !important;
+    }
+
+    .about-item {
+        text-align: left;
+    }
+
+    .item-2,
+    .items-3 {
+        margin: 0;
+        width: 100%
+    }
+
+    .item4 {
+        text-align: left;
+        /* Reset text alignment for smaller screens */
+    }
+}
+
+/* Top products section*/
+.top-products {
+    margin: 50px 0 50px 0;
+}
+
+.top-products>.wrapper>h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.products-listing {
+    margin-top: 25px;
+    display: flex;
+    flex-flow: column;
+    gap: 1.2rem;
+}
+
+.products-listing .listing {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+}
+
+.products-listing .listing .number,
+.item-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.products-listing .listing .number {
+    margin: 15px;
+}
+
+.item-title {
+    margin: 15px 0 0;
+}
+
+
+.description p {
+    margin: 15px 0 15px;
+}
+
+.listing img {
+    width: 50%;
+    border-radius: 25px;
+}
+
+@media (max-width: 891px) {
+    .listing {
+        flex-flow: column !important;
+    }
+
+    .listing img {
+        /* width: 65%; */
+        border-radius: 25px;
+    }
+
+    .prod-item-3 {
+        order: 4;
+    }
+
+    .about-item {
+        padding: 0px;
+    }
+}

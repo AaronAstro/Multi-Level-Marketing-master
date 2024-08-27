@@ -1,0 +1,56 @@
+/* was testing something */
+.terms-details .wrapper h2 {
+    position: relative;
+    margin: 100px 0 50px;
+}
+
+/* end test */
+.terms-details {
+    margin-top: 20px;
+}
+
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Transition for button rotation */
+}
+
+.toggle-btn.active {
+    transform: rotate(45deg);
+    /* Rotate button when active */
+}
+
+.faq-answer {
+    padding-left: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /* Transition for max-height */
+}
+
+.faq-answer ul {
+    margin-left: 25px;
+}
+
+.faq-answer.show {
+    max-height: 1000px;
+    /* Adjust max-height to a value greater than expected height */
+}

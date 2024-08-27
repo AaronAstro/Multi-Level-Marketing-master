@@ -1,0 +1,105 @@
+.main-section-cart {
+  margin-top: 50px;
+}
+
+.wrapper-checkout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 15px 0;
+}
+
+.wrapper-checkout > section {
+  flex-grow: 1;
+  flex-basis: 330px;
+}
+
+.form-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.form-section {
+  flex-grow: 1;
+  min-width: 250px;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="date"],
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#address {
+  min-height: 85px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.error-message {
+  margin-top: -15px;
+  margin-bottom: 15px;
+  color: red;
+  font-size: 12px;
+  display: none;
+  align-self: flex-start;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  background-color: #afadad;
+}
+
+thead {
+  background-color: #007bff;
+  color: #000000; /* Black text color */
+}
+
+thead th {
+  padding: 8px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #000000; /* Black border color */
+}
+
+tbody td {
+  padding: 8px;
+  color: #000000; /* Black text color */
+}
+
+tfoot th {
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  border-top: 1px solid #000000; /* Black border color */
+  color: #000000; /* Black text color */
+}
